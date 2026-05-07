@@ -1,19 +1,40 @@
+/*.none {
+  display: none;
+}
+
+@import url(base.css);
+@import url(container.css);
+@import url(hero.css);
+@import url(section.css);*/
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 h1,
 h2,
 h3,
-h4 {
-  margin: 0;
-}
-
+h4,
+h5,
+h6,
 p {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-ul {
+ul,
+ol {
   margin: 0;
-  list-style: none;
   padding: 0;
+  list-style: none;
 }
+
 img {
   display: block;
 }
@@ -32,7 +53,7 @@ img {
 /*header*/
 
 .header {
-  /*border-bottom: 1px solid #e7e9fc;*/
+  border-bottom: 1px solid #e7e9fc;
 
   box-shadow:
     0px 2px 1px rgba(46, 47, 66, 0.08),
@@ -71,7 +92,7 @@ img {
 
 .link-container {
   display: flex;
-  /*margin-left: 76px;*/
+  margin-left: 76px;
   gap: 40px;
 }
 
@@ -153,6 +174,7 @@ body {
 
 .page-title {
   background-color: #2e2f42;
+  padding: 188px 0;
   background-image:
     linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     url("../images/hero-image.jpg");
@@ -162,22 +184,8 @@ body {
   background-size: cover;
 
   max-width: 1440px;
-  padding: 188px 0;
   margin: 0 auto;
   color: #ffffff;
-}
-
-.hero-image {
-  background-color: rgba(46, 47, 66, 0.7);
-  padding: 188px 0;
-  background-image:
-    linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url("//images/hero-image.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  max-width: 1440px;
-  margin: 0 auto;
   text-align: center;
 }
 
@@ -191,21 +199,24 @@ body {
 }
 
 .button {
-  background-color: #4d5ae5;
-  color: white;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  cursor: pointer;
+  min-width: 169px;
+  height: 56px;
+  border-radius: 4px;
+
   text-align: center;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  min-width: 169px;
-  height: 56px;
-  border-radius: 4px;
+
+  background-color: #4d5ae5;
+  color: white;
+
+  cursor: pointer;
   border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -236,23 +247,22 @@ body {
 
 .about-us {
   display: flex;
-
   gap: 24px;
 }
 
 .about-us-cont {
-  width: calc((100% - 72px) / 4);
+  /*width: calc((100% - 72px) / 4);*/
 }
 
 .icons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   height: 112px;
   margin-bottom: 8px;
   border-radius: 4px;
   background-color: #f4f4fd;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid #8e8f99;
 }
 
@@ -286,7 +296,7 @@ body {
 .team-div {
   padding: 32px 0;
 
-  border-radius: 0 0 4px 4px;
+  /*border-radius: 0 0 4px 4px;*/
 }
 
 .section-h {
@@ -304,7 +314,7 @@ body {
   gap: 24px;
 }
 .team-card {
-  width: calc((100% - 72px) / 4);
+  /* width: calc((100% - 72px) / 4);*/
   border-radius: 0px 0px 4px 4px;
 
   box-shadow:
@@ -342,6 +352,17 @@ body {
 
 .social-item {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/*.social-item {
+  display: flex;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -351,11 +372,12 @@ body {
   width: 40px;
   height: 40px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.social-item:active {
+}*/
+/*.social-item:active {
   background-color: #404bbf;
-}
+}*/
 
+.social-item:active,
 .social-item:hover,
 .social-item:focus {
   background-color: #404bbf;
@@ -370,7 +392,6 @@ body {
 .portfolio-container {
   display: flex;
   flex-wrap: wrap;
-  max-width: 1158px;
   justify-content: space-between;
 
   column-gap: 24px;
@@ -534,7 +555,6 @@ body {
   line-height: 2;
   font-weight: 400;
   font-size: 12px;
-  line-height: 2;
   letter-spacing: 0.04em;
   color: #fff;
 }
@@ -855,30 +875,6 @@ body {
   background-color: #404bbf;
 }
 
-/*.button-send {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  border-radius: 4px;
-  padding-block: 16px;
-  padding-inline: 32px;
-  margin: auto;
-  width: 169px;
-  height: 56px;
-
-  background: #4d5ae5;
-
-  font-weight: 500;
-  font-size: 16px;
-
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: #fff;
+.nan {
+  display: none;
 }
-
-.button-send:hover,
-.button-send:focus {
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  background: #404bbf;
-}*/
