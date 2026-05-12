@@ -1,28 +1,51 @@
 .bady {
+  font-family: "Roboto" sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #2e2f42;
-  padding: 24px 0;
+  background-color: #ffffff;
+
+  color: #434455;
 }
 
 h1,
 h2,
 h3,
-h4 {
-  margin: 0;
-}
-
+h4,
+h5,
+h6,
+ul,
 p {
   margin: 0;
 }
 
-ul {
-  margin: 0;
-  list-style: none;
+ul,
+ol {
   padding: 0;
+  list-style: none;
 }
+
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }

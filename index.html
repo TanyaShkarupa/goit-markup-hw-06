@@ -33,52 +33,96 @@
   <body>
     <header class="header">
       <div class="container">
-        <nav class="page-nav">
-          <a class="logo" href="./index.html"
-            >Web
-            <span class="accent">Studio</span>
-          </a>
+        <a class="logo" href="./index.html"
+          >Web<span class="accent">Studio</span>
+        </a>
+        <button type="button" class="burger-btn">
+          <svg width="24" height="24">
+            <use href="./images/burger-menu.svg#icon-burger-menu"></use>
+          </svg>
+        </button>
 
-          <ul class="link-container">
-            <li>
-              <a href="./index.html" class="links current" target="_blank"
-                >Studio</a
-              >
-            </li>
-            <li>
-              <a href="" class="links" target="_blank">Portfolio</a>
-            </li>
-            <li>
-              <a href="" class="links" target="_blank">Contacts</a>
-            </li>
-          </ul>
-        </nav>
-
-        <address class="address-links">
-          <ul class="header-addr">
-            <li class="cont-addr">
-              <a href="mailto:info@devstudio.com" class="add-link"
-                >info@devstudio.com
+        <div class="mobile-menu">
+          <button class="menu-close-btm" type="button">
+            <svg class="menu-close-icon" width="8" height="8">
+              <use href="./images/icons-2.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="page-nav">
+            <ul class="link-container">
+              <li class="nav-link">
+                <a href="./index.html" class="links current" target="_blank"
+                  >Studio</a
+                >
+              </li>
+              <li class="nav-link">
+                <a href="" class="links" target="_blank">Portfolio</a>
+              </li>
+              <li class="nav-link">
+                <a href="" class="links" target="_blank">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="address-links">
+            <ul class="header-addr">
+              <li class="cont-addr">
+                <a href="mailto:info@devstudio.com" class="add-link"
+                  >info@devstudio.com
+                </a>
+              </li>
+              <li class="cont-addr">
+                <a href="tel:+110001111111" class="add-link"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="social">
+            <li class="social-card-team">
+              <a class="social-item" href="#">
+                <svg class="social-icon-teams" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
               </a>
             </li>
-            <li class="cont-addr">
-              <a href="tel:+110001111111" class="add-link"
-                >+11 (000) 111-11-11</a
-              >
+            <li>
+              <a class="social-item" href="#">
+                <svg class="social-icon-teams" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="social-item" href="#">
+                <svg class="social-icon-teams" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="social-item" href="#">
+                <svg class="social-icon-teams" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </address>
+        </div>
       </div>
     </header>
 
     <!--section 1-->
 
     <main>
-      <section class="page-title">
+      <section class="hero">
         <div class="container">
-          <h1 class="title">Effective Solutions for Your Business</h1>
+          <h1 class="hero-title">Effective Solutions for Your Business</h1>
 
-          <button class="button" type="button" onclick="location.href = '/'">
+          <button
+            class="hero-button"
+            type="button"
+            onclick="location.href = '/'"
+          >
             Order Service
           </button>
         </div>
@@ -86,7 +130,7 @@
 
       <!--section 2-->
 
-      <section class="sections">
+      <section class="advantages section">
         <div class="container">
           <h2 class="visually-hidden">About us</h2>
           <ul class="about-us">
@@ -149,9 +193,9 @@
 
       <!--section 3-->
 
-      <section class="sections team-section">
+      <section class="section team-section">
         <div class="container">
-          <h2 class="section-h">Our Team</h2>
+          <h2 class="section-title">Our Team</h2>
           <ul class="our-team">
             <li class="team-card">
               <img
@@ -331,9 +375,9 @@
 
       <!--section 4-->
 
-      <section class="sections">
+      <section class="section portfolio">
         <div class="container">
-          <h2 class="portfolio">Our Portfolio</h2>
+          <h2 class="section-title">Our Portfolio</h2>
           <ul class="portfolio-container">
             <li class="sect-port">
               <div class="portfolio-img-wrapper">
@@ -354,7 +398,7 @@
 
               <div class="portfolio-wrap">
                 <h3 class="portfolio-title">Banking App</h3>
-                <p class="portfoliop">App</p>
+                <p class="portfolio-p">App</p>
               </div>
             </li>
             <li class="sect-port">
@@ -364,7 +408,7 @@
                   width="360"
                   height="300"
                   alt="Banking App"
-                  class="portfolio-img"
+                  class="portfoli-o-img"
                 />
 
                 <p class="portfolio-overlay-text">
@@ -375,7 +419,7 @@
               </div>
               <div class="portfolio-wrap">
                 <h3 class="portfolio-title">Cashless Payment</h3>
-                <p class="portfoliop">Marketing</p>
+                <p class="portfolio-p">Marketing</p>
               </div>
             </li>
             <li class="sect-port">
@@ -396,7 +440,7 @@
               </div>
               <div class="portfolio-wrap">
                 <h3 class="portfolio-title">Meditation App</h3>
-                <p class="portfoliop">App</p>
+                <p class="portfolio-p">App</p>
               </div>
             </li>
             <li class="sect-port">
@@ -417,7 +461,7 @@
               </div>
               <div class="portfolio-wrap">
                 <h3 class="portfolio-title">Taxi Service</h3>
-                <p class="portfoliop">Marketing</p>
+                <p class="portfolio-p">Marketing</p>
               </div>
             </li>
             <li class="sect-port">
@@ -438,7 +482,7 @@
               </div>
               <div class="portfolio-wrap">
                 <h3 class="portfolio-title">Screen Illustrations</h3>
-                <p class="portfoliop">Design</p>
+                <p class="portfolio-p">Design</p>
               </div>
             </li>
             <li class="sect-port">
@@ -459,7 +503,7 @@
               </div>
               <div class="portfolio-wrap">
                 <h3 class="portfolio-title">Online Courses</h3>
-                <p class="portfoliop">Marketing</p>
+                <p class="portfolio-p">Marketing</p>
               </div>
             </li>
           </ul>
@@ -469,7 +513,7 @@
 
     <!--footer-->
 
-    <footer class="page-footer">
+    <footer class="page-footer none">
       <div class="container">
         <div class="footer-info">
           <a class="logo-m" href="./index.html"
@@ -539,7 +583,7 @@
 
     <!--backdrop-->
 
-    <div class="backdrop">
+    <div class="backdrop none">
       <div class="modal">
         <button class="modal-close-btm" type="button">
           <svg class="modal-close-icon" width="8" height="8">
